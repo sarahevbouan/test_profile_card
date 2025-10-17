@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <title>SarahE's Profile Card</title>
+    <script
+      src="https://kit.fontawesome.com/687bd81622.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="flex_and_wrap">
+      <article data-testid="test-profile-card" id="card">
+        <figure id="avatar" class="flex_and_wrap">
+          <img
+            src="https://res.cloudinary.com/sarahevbouan/image/upload/v1654492533/Zuri/myphoto_ksvdey.jpg"
+            alt="SarahE's display photo"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+        <section id="profile_section">
+          <header id="header" class="flex_and_wrap">
+            <h2
+              data-testid="test-user-name"
+              aria-label="Profile of Sarah Evbouan"
+            >
+              Sarah Evbouan
+            </h2>
+            <span>(Frontend develpoer)</span>
+          </header>
+          <p data-testid="test-user-bio">
+            I am a frontend web developer with a passion for building
+            user-friendly web-applications that deliver exceptional user
+            experiences. I specialize in HTML, CSS, Javascript and React, with a
+            constant desire to learn and explore more.
+          </p>
+          <section id="time_wrapper">
+            <h4>Current time:</h4>
+            <p id="time" data-testid="text-user-time"></p>
+          </section>
+          <section id="socials">
+            <h4>Let's connect</h4>
+            <nav data-testid="test-user-social-links" class="flex_and_wrap">
+              <li data-testid="test-user-social-linkedin">
+                <a
+                  href="https://www.linkedin.com/in/sarah-evbouan-19b72a191"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li data-testid="test-user-social-twitter">
+                <a
+                  href="https://www.x.com/ekhigbe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li data-testid="test-user-social-github">
+                <a
+                  href="https://www.github.com/sarahevbouan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </nav>
+          </section>
+          <section class="hobbies_and_dislikes">
+            <h4>Hobbies</h4>
+            <ul data-testid="test-user-hobbies" class="flex_and_wrap">
+              <li>Movies</li>
+              <li>Travelling</li>
+              <li>Music</li>
+            </ul>
+          </section>
+          <section class="hobbies_and_dislikes">
+            <h4>Dislikes</h4>
+            <ul data-testid="test-user-dislikes" class="flex_and_wrap">
+              <li>Bugs</li>
+              <li>Disappointments</li>
+              <li>Dishonesty</li>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <a href="https://www.github.com/sarahevbouan" target="_blank"
+        >&copy; 2025 | Made by Sarah Evbouan
+      </a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
