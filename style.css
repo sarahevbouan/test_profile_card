@@ -13,8 +13,6 @@ body {
 main {
   max-width: 100vw;
   min-height: 100vh;
-  /* display: flex; */
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
@@ -44,13 +42,10 @@ i {
   width: 500px;
   max-width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
-  /* opacity: 0.3; */
   backdrop-filter: blur(2px);
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   gap: 1rem;
   border-radius: 20px;
   padding: 1.5rem;
@@ -60,11 +55,7 @@ i {
   background-image: url("images/frame_bg.png");
   background-size: cover;
   height: 200px;
-  /* width: 200px; */
-  /* border: 1px solid rgb(245, 238, 238); */
   border-radius: 18px;
-  /* display: flex; */
-  /* justify-content: center; */
   align-items: end;
 }
 
@@ -79,7 +70,6 @@ i {
 }
 
 #header {
-  /* display: flex; */
   gap: 5px;
   align-items: center;
   margin-bottom: 0.5rem;
@@ -91,25 +81,13 @@ h4:first-child {
 }
 
 #socials li {
-  /* display: inline-block; */
-  /* height: 40px; */
-  /* width: 40px; */
   font-size: 20px;
-  /* color: inherit; */
-  /* border-radius: 50%; */
-  /* background-color: rgba(255, 255, 255, 0.3); */
-  /* transform: translateY(0px); */
   transition: transform 0.2s;
 }
 
 #socials li:hover {
-  /* color: orange; */
   transform: translateY(-3px);
 }
-
-/* .hobbies_and_dislikes > *:first-child, #socials >  {
-  margin-bottom: 0.5rem;
-} */
 
 .hobbies_and_dislikes li {
   background-color: rgba(0, 0, 0, 0.3);
@@ -130,14 +108,10 @@ footer a:hover {
 @media screen and (min-width: 768px) {
   #card {
     flex-direction: row;
-    /* align-items: start; */
   }
   #avatar {
     background-image: none;
-    /* border-right: 1px solid white; */
-    /* border-radius: none; */
     align-items: start;
-    /* height: 100%; */
   }
 
   #profile_section {
