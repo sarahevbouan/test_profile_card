@@ -7,15 +7,15 @@ It displays a developer profile with personal information, social links, hobbies
 
 ## Live Demo
 
-**👉 [Visit site](https://www.sarahevbouan.github.io/test_profile_card/)**
+**👉 [Visit site](https://sarahevbouan.github.io/test_profile_card/)**
 
 ---
 
 ## 🖼️ Preview
 
-![Profile Card Screenshot](/images/profile_card_screenshot.png)
+![Profile Card Screenshot](/images/profile_card_screenshot.png)(/images/profile_card_screenshot.png) = 600px
 
-![Profile Card Screenshot](/images/profile_card_screenshot2.png)
+![Profile Card Screenshot](/images/profile_card_screenshot2.png)(/images/profile_card_screenshot2.png = 600px)
 
 ---
 
