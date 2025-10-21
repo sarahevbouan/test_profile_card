@@ -85,7 +85,7 @@ cd test_profile_card
 ```
 
 2. Open the project
-   You can open the `index.html` file directly in your browser.
+   You can open the `index.html` file directly in your browser and navigate to the other pages from there.
 
 Or, for live reloading (recommended for development):
 

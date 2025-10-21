@@ -5,20 +5,21 @@ const close_popup = document.querySelector(".close-popup");
 
 const email_regEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-const check_input_validity = (e, condition, element, message) => {
+const check_input_validity = (e, condition, errorElement, message) => {
   if (condition) {
-    element.textContent = "";
-    element.style.display = "none";
+    errorElement.textContent = "";
+    errorElement.style.display = "none";
     e.target.setCustomValidity("");
     e.target.style.outline = "revert";
   } else {
-    element.style.display = "block";
-    element.textContent = message;
+    errorElement.style.display = "block";
+    errorElement.textContent = message;
     e.target.setCustomValidity(message);
     e.target.style.outline = "1px solid red";
   }
 };
 
+// Input validation
 form.addEventListener("input", (e) => {
   if (e.target.classList.contains("required-field")) {
     const aria_described_by = e.target.getAttribute("aria-describedby");
@@ -46,16 +47,23 @@ form.addEventListener("input", (e) => {
         e,
         is_email_valid,
         error_element,
-        "Input a valid email e.g jane@jane.com"
+        "Enter a valid email e.g jane@jane.com"
       );
     }
   }
 });
 
+// Form submission after validation
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  required_field.forEach((field) => field.value.trimEnd());
+  required_field.forEach((field) => {
+    field.value.trimEnd();
+    // Double checking that all fields are valid
+    if (!field.validity.valid) {
+      return;
+    }
+  });
 
   const popup = success_message.parentElement.parentElement;
   popup.style.display = "flex";

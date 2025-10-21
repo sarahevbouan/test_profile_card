@@ -21,8 +21,9 @@
       </section>
       <section class="card form-wrapper">
         <h2>Send a message</h2>
+        <p id="instruction">* Indicates required field</p>
         <form action="">
-          <label for="full-name">Full Name</label>
+          <label for="full-name">Full Name <span>*</span></label>
           <input
             required
             type="text"
@@ -38,7 +39,7 @@
             id="full-name-error"
             class="error-message"
           ></p>
-          <label for="email">Email</label>
+          <label for="email">Email <span>*</span></label>
           <input
             required
             type="email"
@@ -54,7 +55,7 @@
             id="email-error"
             class="error-message"
           ></p>
-          <label for="subject">Subject</label>
+          <label for="subject">Subject <span>*</span></label>
           <input
             required
             type="text"
@@ -69,7 +70,7 @@
             id="subject-error"
             class="error-message"
           ></p>
-          <label for="message">Message</label>
+          <label for="message">Message <span>*</span></label>
           <textarea
             required
             minlength="10"
