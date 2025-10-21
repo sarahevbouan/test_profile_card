@@ -21,9 +21,9 @@ It displays a developer profile with personal information, social links, hobbies
 
 ## 🖼️ Preview
 
-![Profile Card Screenshot](/images/profile_card_screenshot.png)(/images/profile_card_screenshot.png) = 600px
+![Profile Card Screenshot](/images/profile_card_screenshot.png)
 
-![Profile Card Screenshot](/images/profile_card_screenshot2.png)(/images/profile_card_screenshot2.png = 600px)
+![Profile Card Screenshot](/images/profile_card_screenshot2.png)
 
 ---
 
@@ -54,9 +54,9 @@ A clean and responsive multi-page project that features an **About Me** section 
 
 ## 🖼️ Preview
 
-![Profile Card Screenshot](/images/about_page_screenshot.png)(/images/about_page_screenshot.png) = 600px
+![Profile Card Screenshot](/images/about_page_screenshot.png)
 
-![Profile Card Screenshot](/images/contact_page_screenshot.png)(/images/contact_page_screenshot.png = 600px)
+![Profile Card Screenshot](/images/contact_page_screenshot.png)
 
 ---
 
@@ -85,7 +85,7 @@ cd test_profile_card
 ```
 
 2. Open the project
-   You can open then `index.html` file directly in your browser.
+   You can open the `index.html` file directly in your browser.
 
 Or, for live reloading (recommended for development):
 
