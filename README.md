@@ -1,13 +1,21 @@
-# 👩‍💻 Test Profile Card - HNG13 Stage_0 Task
+# 🌐 Personal Portfolio
 
-This is a simple frontend profile card project built with HTML, CSS, and JavaScript.  
-It displays a developer profile with personal information, social links, hobbies, dislikes, and a dynamically updating current time.
+A simple portfolio website designed to showcase profile details, biography, and contact information. The layout features a Profile card, an About page and a contact form for visitors to reach out.
 
 ---
 
 ## Live Demo
 
 **👉 [Visit site](https://sarahevbouan.github.io/test_profile_card/)**
+**👉 [About Me](https://sarahevbouan.github.io/test_profile_card/pages/aboutMe.html)**
+**👉 [Contact Us](https://sarahevbouan.github.io/test_profile_card/pages/contactUs.html)**
+
+---
+
+# 👩‍💻 Test Profile Card - HNG13 Stage_0 Task
+
+A simple frontend profile card project built with HTML, CSS, and JavaScript.  
+It displays a developer profile with personal information, social links, hobbies, dislikes, and a dynamically updating current time.
 
 ---
 
@@ -29,6 +37,29 @@ It displays a developer profile with personal information, social links, hobbies
 
 ---
 
+# 👩‍💻 About Me & Contact Us pages - HNG13 Stage_1 Task
+
+A clean and responsive multi-page project that features an **About Me** section showcasing personal bio, goals, and reflections, and a **Contact Page** with a simple form for sending messages.
+
+---
+
+## 🖼️ Features
+
+- About Section
+- Contact Page
+- Responsive Layout
+- Modern UI Design
+
+---
+
+## 🖼️ Preview
+
+![Profile Card Screenshot](/images/about_page_screenshot.png)(/images/about_page_screenshot.png) = 600px
+
+![Profile Card Screenshot](/images/contact_page_screenshot.png)(/images/contact_page_screenshot.png = 600px)
+
+---
+
 ## 🛠️ Built With
 
 - **HTML5**
@@ -37,7 +68,7 @@ It displays a developer profile with personal information, social links, hobbies
 
 ---
 
-## ⚙️ Run locally
+## ⚙️ Hot to run locally
 
 Follow these instructions to run the project locally.
 
@@ -63,5 +94,9 @@ Or, for live reloading (recommended for development):
 code .
 # Then run with Live Server extension
 ```
+
+---
+
+© 2025 | **Sarah Evbouan**
 
 ---
