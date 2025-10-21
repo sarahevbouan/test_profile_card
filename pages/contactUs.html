@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <li><a href="../index.html">Profile</a></li>
+      <li><a href="./aboutMe.html">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </nav>
+
+    <main id="contact-main">
+      <section class="left-sidebar">
+        <h1>I'D LOVE TO HEAR FROM YOU!</h1>
+        <p>Fill out the form to get started</p>
+      </section>
+      <section class="card form-wrapper">
+        <h2>Send a message</h2>
+        <form action="">
+          <label for="full-name">Full Name</label>
+          <input
+            required
+            type="text"
+            name="full-name"
+            id="full-name"
+            data-testid="test-contact-name"
+            aria-describedby="full-name-error"
+            placeholder="Jane Doe"
+            class="required-field"
+          />
+          <p
+            data-testid="test-contact-error-name"
+            id="full-name-error"
+            class="error-message"
+          ></p>
+          <label for="email">Email</label>
+          <input
+            required
+            type="email"
+            name="email"
+            id="email"
+            data-testid="test-contact-email"
+            aria-describedby="email-error"
+            placeholder="janedoe@jane.com"
+            class="required-field"
+          />
+          <p
+            data-testid="test-contact-error-email"
+            id="email-error"
+            class="error-message"
+          ></p>
+          <label for="subject">Subject</label>
+          <input
+            required
+            type="text"
+            name="subject"
+            id="subject"
+            data-testid="test-contact-subject"
+            aria-describedby="subject-error"
+            class="required-field"
+          />
+          <p
+            data-testid="test-contact-error-subject"
+            id="subject-error"
+            class="error-message"
+          ></p>
+          <label for="message">Message</label>
+          <textarea
+            required
+            minlength="10"
+            rows="4"
+            name="message"
+            id="message"
+            data-testid="test-contact-message"
+            aria-describedby="message-error"
+            class="required-field"
+          ></textarea>
+          <p
+            data-testid="test-contact-error-message"
+            id="message-error"
+            class="error-message"
+          ></p>
+          <input
+            type="submit"
+            value="Submit"
+            data-testid="test-contact-submit"
+          />
+        </form>
+      </section>
+      <section id="success-section">
+        <div>
+          <p data-testid="test-contact-success" id="success-message"></p>
+          <button class="close-popup">Close</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/contact.js"></script>
+  </body>
+</html>
