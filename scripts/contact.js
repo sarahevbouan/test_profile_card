@@ -3,7 +3,8 @@ const success_message = document.querySelector("#success-message");
 const form = document.querySelector("form");
 const close_popup = document.querySelector(".close-popup");
 
-const email_regEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const email_regEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$/;
+const fullname_regEx = /^[a-zA-Z'-]+ [a-zA-Z'-]+(?: [a-zA-Z'-]+)*$/;
 
 const check_input_validity = (e, condition, errorElement, message) => {
   if (condition) {
@@ -34,11 +35,18 @@ form.addEventListener("input", (e) => {
       e.target.style.outline = "revert";
     } else {
       error_element.style.display = "block";
-      e.target.id === "message"
-        ? (error_element.textContent =
-            "Message must be at least 10 characters long")
-        : (error_element.textContent = "Required");
       e.target.style.outline = "1px solid red";
+      error_element.textContent = `Please enter at least ${e.target.minLength} characters`;
+    }
+    if (e.target.id === "full-name") {
+      const name = e.target.value;
+      const is_name_valid = fullname_regEx.test(name);
+      check_input_validity(
+        e,
+        is_name_valid,
+        error_element,
+        "Please enter your full name"
+      );
     }
     if (e.target.id === "email") {
       const email = e.target.value;
@@ -67,7 +75,8 @@ form.addEventListener("submit", (e) => {
 
   const popup = success_message.parentElement.parentElement;
   popup.style.display = "flex";
-  success_message.textContent = "Your message has been sent";
+  success_message.textContent =
+    "Your message has been sent. We will get back to you shortly.";
   required_field.forEach((field) => (field.value = ""));
   document.body.style.overflow = "hidden";
 });

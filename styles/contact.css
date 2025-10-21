@@ -77,17 +77,18 @@ input[type="submit"]:hover,
 }
 
 #success-section > * {
-  height: 150px;
+  min-height: 150px;
   width: 80%;
   inset: 0;
   background-color: white;
-  padding: 1rem;
+  padding: 2rem 1rem;
   border-radius: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
 #success-message {
-  color: black;
-  margin-bottom: 1rem;
+  margin: 0.2rem 0 1rem 0;
 }
 
 .close-popup {
@@ -95,7 +96,6 @@ input[type="submit"]:hover,
   color: white;
   border-radius: 8px;
   padding: 8px 15px;
-  float: right;
   cursor: pointer;
 }
 

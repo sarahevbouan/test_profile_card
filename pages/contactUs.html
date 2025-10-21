@@ -17,10 +17,10 @@
     <main id="contact-main">
       <section class="left-sidebar">
         <h1>I'D LOVE TO HEAR FROM YOU!</h1>
-        <p>Fill out the form to reach out to me</p>
+        <p>Fill out the form to send us a message</p>
       </section>
       <section class="card form-wrapper">
-        <h2>Send a message</h2>
+        <h2>Get in Touch</h2>
         <p id="instruction">* Indicates required field</p>
         <form action="">
           <label for="full-name">Full Name <span>*</span></label>
@@ -58,7 +58,7 @@
           <label for="subject">Subject <span>*</span></label>
           <input
             required
-            minlength="3"
+            minlength="5"
             type="text"
             name="subject"
             id="subject"
@@ -87,15 +87,12 @@
             id="message-error"
             class="error-message"
           ></p>
-          <input
-            type="submit"
-            value="Submit"
-            data-testid="test-contact-submit"
-          />
+          <input type="submit" value="Send" data-testid="test-contact-submit" />
         </form>
       </section>
       <section id="success-section">
         <div>
+          <h2>Thank You!</h2>
           <p data-testid="test-contact-success" id="success-message"></p>
           <button class="close-popup">Close</button>
         </div>
