@@ -21,7 +21,8 @@ const check_input_validity = (e, condition, element, message) => {
 
 form.addEventListener("input", (e) => {
   if (e.target.classList.contains("required-field")) {
-    const aria_described_by = e.target.getAttribute("aria-describedBy");
+    const aria_described_by = e.target.getAttribute("aria-describedby");
+    console.log(aria_described_by);
     const error_element = document.getElementById(aria_described_by);
     const is_valid = e.target.validity.valid;
     e.target.value = e.target.value.trimStart();
