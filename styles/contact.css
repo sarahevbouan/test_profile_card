@@ -26,6 +26,10 @@ form > * {
   width: 100%;
 }
 
+#instruction {
+  font-size: 14px;
+}
+
 #instruction,
 label span {
   color: rgb(230, 113, 113);
